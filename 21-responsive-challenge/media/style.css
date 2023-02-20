@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.example {
+    width: 90%;
+    margin: 5em auto;
+    padding: 10em 0;
+    background-color: steelblue;
+}
+
+/* 600px or bigger, This is used to mobile first*/
+@media (min-width: 600px) {
+    .example {
+        background-color: olivedrab;
+    }
+}
+
+/* 600px or smaller, this is used to desktop first */
+@media (max-width: 600px) {}
+
+/* Combaning */
+@media (min-width: 600px) and (max-width: 900) {}
